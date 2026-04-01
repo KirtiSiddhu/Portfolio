@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     setStatus('Sending...');
     try {
-      await axios.post('http://localhost:5000/api/contact', formData);
+      await axios.post('https://portfolio-k0vs.onrender.com/api/contact', formData);
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (err) {
